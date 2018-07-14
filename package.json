@@ -5,11 +5,11 @@
   "main": "build/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel lib -d build",
-    "lint": "eslint lib/**; exit 0",
-    "lint:watch": "esw -w lib/**",
-    "build:watch": "babel lib -w -d build",
-    "prepare": "npm run build",
+    "build": "babel test -d build",
+    "lint": "eslint test/**; exit 0",
+    "lint:watch": "esw -w test/**",
+    "build:watch": "babel test -w -d build",
+    "prepare": "make clean build",
     "start": "npm run build:watch"
   },
   "repository": {
@@ -17,14 +17,21 @@
     "url": "git+https://github.com/josiahcoad/reducer-utils.git"
   },
   "keywords": [
-    "reducers",
+    "reducer",
     "redux",
-    "actions",
+    "action",
     "api",
-    "react"
+    "rest",
+    "http",
+    "middleware",
+    "fetch",
+    "endpoint",
+    "react",
+    "reactjs",
+    "flux"
   ],
   "author": "Josiah Coad",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/josiahcoad/reducer-utils/issues"
   },
@@ -47,5 +54,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "redux": "^4.0.0"
+  },
+  "peerDependencies": {
+    "react": "^0.14.0 || ^15.0.0-0 || ^16.0.0-0"
   }
 }
