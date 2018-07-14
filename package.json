@@ -1,0 +1,51 @@
+{
+  "name": "reducer-utils",
+  "version": "1.0.0",
+  "description": "abstracting out the common patterns for reducers and reducers for server call actions",
+  "main": "build/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel lib -d build",
+    "lint": "eslint lib/**; exit 0",
+    "lint:watch": "esw -w lib/**",
+    "build:watch": "babel lib -w -d build",
+    "prepare": "npm run build",
+    "start": "npm run build:watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josiahcoad/reducer-utils.git"
+  },
+  "keywords": [
+    "reducers",
+    "redux",
+    "actions",
+    "api",
+    "react"
+  ],
+  "author": "Josiah Coad",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/josiahcoad/reducer-utils/issues"
+  },
+  "homepage": "https://github.com/josiahcoad/reducer-utils#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^8.2.6",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^5.1.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "eslint-watch": "^4.0.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-flowtype": "^2.21.0"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "redux": "^4.0.0"
+  }
+}
